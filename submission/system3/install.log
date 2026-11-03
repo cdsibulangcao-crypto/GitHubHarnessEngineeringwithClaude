@@ -1,0 +1,36 @@
+Obtaining file:///R:/Configure%20Claude%20Code%20for%20a%20Multi-Surface%20Monorepo%20Team/04-plan-mode-and-explore-decision-doc/solution
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: pathspec>=0.12 in .\.venv\Lib\site-packages (from ecommerce-team-config==0.1.0) (1.1.1)
+Requirement already satisfied: pyyaml>=6.0 in .\.venv\Lib\site-packages (from ecommerce-team-config==0.1.0) (6.0.3)
+Requirement already satisfied: pytest>=8 in .\.venv\Lib\site-packages (from ecommerce-team-config==0.1.0) (9.2.0)
+Requirement already satisfied: mypy>=1.10 in .\.venv\Lib\site-packages (from ecommerce-team-config==0.1.0) (2.4.1)
+Requirement already satisfied: ruff>=0.5 in .\.venv\Lib\site-packages (from ecommerce-team-config==0.1.0) (0.17.3)
+Requirement already satisfied: types-PyYAML>=6.0 in .\.venv\Lib\site-packages (from ecommerce-team-config==0.1.0) (6.0.12.20261103)
+Requirement already satisfied: typing_extensions>=4.6.0 in .\.venv\Lib\site-packages (from mypy>=1.10->ecommerce-team-config==0.1.0) (4.16.0)
+Requirement already satisfied: mypy_extensions>=1.0.0 in .\.venv\Lib\site-packages (from mypy>=1.10->ecommerce-team-config==0.1.0) (1.1.0)
+Requirement already satisfied: librt>=0.16.0 in .\.venv\Lib\site-packages (from mypy>=1.10->ecommerce-team-config==0.1.0) (0.16.0)
+Requirement already satisfied: ast-serialize<1.0.0,>=0.12.1 in .\.venv\Lib\site-packages (from mypy>=1.10->ecommerce-team-config==0.1.0) (0.13.1)
+Requirement already satisfied: colorama>=0.4 in .\.venv\Lib\site-packages (from pytest>=8->ecommerce-team-config==0.1.0) (0.4.6)
+Requirement already satisfied: iniconfig>=2 in .\.venv\Lib\site-packages (from pytest>=8->ecommerce-team-config==0.1.0) (2.3.1)
+Requirement already satisfied: packaging>=24 in .\.venv\Lib\site-packages (from pytest>=8->ecommerce-team-config==0.1.0) (26.3)
+Requirement already satisfied: pluggy<2,>=1.6 in .\.venv\Lib\site-packages (from pytest>=8->ecommerce-team-config==0.1.0) (1.7.0)
+Requirement already satisfied: pygments>=2.15 in .\.venv\Lib\site-packages (from pytest>=8->ecommerce-team-config==0.1.0) (2.21.0)
+Building wheels for collected packages: ecommerce-team-config
+  Building editable for ecommerce-team-config (pyproject.toml): started
+  Building editable for ecommerce-team-config (pyproject.toml): finished with status 'done'
+  Created wheel for ecommerce-team-config: filename=ecommerce_team_config-0.1.0-0.editable-py3-none-any.whl size=3446 sha256=82dccfc48e92fd1dbc4b1bae4dcf743e30d21a12615cf77f9e5c62dc2a464c1d
+  Stored in directory: C:\Users\c.d.sibulangcao\AppData\Local\Temp\pip-ephem-wheel-cache-tly45ior\wheels\6c\25\35\4f4bacc252b1e05b2019a56e349303dce38cb23249f19a4e36
+Successfully built ecommerce-team-config
+Installing collected packages: ecommerce-team-config
+  Attempting uninstall: ecommerce-team-config
+    Found existing installation: ecommerce-team-config 0.1.0
+    Uninstalling ecommerce-team-config-0.1.0:
+      Successfully uninstalled ecommerce-team-config-0.1.0
+Successfully installed ecommerce-team-config-0.1.0

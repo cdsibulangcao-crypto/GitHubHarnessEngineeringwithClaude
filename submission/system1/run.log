@@ -1,0 +1,19 @@
+run_dir: C:\Users\c.d.sibulangcao\Documents\GitHubHarnessEngineeringwithClaude\Build a Claims Intake Agent with a stop_reason-Driven Loop\exercises\03-dynamic-decomposition\solution\runs\20261103_191028
+[claim_01_kitchen_fire] policy=POL-1001 expected=routed
+  \u2192 outcome=escalated turns=3 clarifications=0 tokens=9436/525 est=$0.0121
+[claim_02_stolen_bike] policy=POL-1007 expected=routed
+  \u2192 outcome=routed turns=5 clarifications=0 tokens=16872/745 est=$0.0206
+[claim_03_water_damage] policy=POL-1004 expected=routed
+  \u2192 outcome=escalated turns=5 clarifications=1 tokens=16741/708 est=$0.0203
+[claim_04_neighbor_injury] policy=POL-1002 expected=routed
+  \u2192 outcome=escalated turns=2 clarifications=0 tokens=6278/546 est=$0.0090
+[claim_05_auto_collision] policy=POL-1003 expected=routed
+  \u2192 outcome=routed turns=4 clarifications=0 tokens=14911/935 est=$0.0196
+[claim_06_low_confidence_escalation] policy=POL-1008 expected=escalated
+  \u2192 outcome=escalated turns=3 clarifications=0 tokens=9718/782 est=$0.0136
+[claim_07_tree_falls_on_car] policy=POL-1005 expected=routed
+  \u2192 outcome=routed turns=5 clarifications=0 tokens=18326/944 est=$0.0230
+[claim_08_minor_porch_damage] policy=POL-1006 expected=routed
+  \u2192 outcome=routed turns=3 clarifications=0 tokens=10433/826 est=$0.0146
+summary: C:\Users\c.d.sibulangcao\Documents\GitHubHarnessEngineeringwithClaude\Build a Claims Intake Agent with a stop_reason-Driven Loop\exercises\03-dynamic-decomposition\solution\runs\20261103_191028\summary.md
+total estimated cost: $0.1328

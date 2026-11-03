@@ -111,7 +111,7 @@ def _eval(run_dir: Path, assembled_md: str) -> None:
         print(f"      {marker}  {r.question_id}  ({expected})")
         print(f"            answer: {r.model_answer[:120]}")
     n_regressed = sum(1 for r in control_results if not r.passed)
-    print(f"      => {n_regressed}/{len(control_results)} control questions regressed (≥1 required)")
+    print(f"      => {n_regressed}/{len(control_results)} control questions regressed (>=1 required)")
 
 
 def main(argv: list[str] | None = None) -> int:

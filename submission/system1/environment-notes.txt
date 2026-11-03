@@ -1,0 +1,21 @@
+Environment setup notes for all four systems
+
+- OS: Windows. Selected interpreter: Python 3.14.4 with pip 26.0.1.
+- The first `python -m venv .venv` attempt in each project returned a non-zero
+  `ensurepip` bootstrap status, although it had created each virtual environment.
+  Running `ensurepip` inside the first venv succeeded, and `pip --version`
+  confirmed pip was present in the other three.
+- Initial editable installs from the deeply nested project paths hit Windows'
+  260-character path limit while writing package metadata. One parallel install
+  also hit a transient PyPI content-type lookup failure.
+- Mapping the workspace root to drive `R:` and rerunning installs sequentially
+  let all four initial test suites pass at their expected counts: 30; 28 passed
+  and 2 skipped; 35; 33. A later Claims run exposed an incomplete Anthropic SDK
+  install despite pip's success message (a missing generated module).
+- Recreated Claims and Context venvs under `C:\harness-venvs\` and connected each
+  project's `.venv` path with a junction. This shortens the actual interpreter
+  prefix used by pip; both live-run SDK imports now work.
+- Claims live run `20261103_191028` completed all eight fixtures and exited 0.
+  Four claims routed and four were escalated by the deterministic backstop
+  because the model ended without calling a terminal tool; this differs from
+  the README's expected 7/1 split and is recorded, not concealed.

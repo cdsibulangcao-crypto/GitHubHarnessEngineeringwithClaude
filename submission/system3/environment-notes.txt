@@ -1,0 +1,8 @@
+System 3 environment notes
+
+- The first `python -m venv .venv` attempt returned a non-zero `ensurepip`
+  status, but the environment was created and pip was available inside it.
+- The initial editable install hit Windows' 260-character path limit while
+  writing package metadata. Mapping the workspace root to drive `R:` and
+  rerunning installation sequentially resolved the setup issue.
+- The final environment passed all 35 tests, and the validator returned `OK`.

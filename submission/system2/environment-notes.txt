@@ -1,0 +1,16 @@
+System 2 environment notes
+
+- The original long-path venv had an incomplete Anthropic SDK package. It
+  imported the package metadata but failed on a missing SDK module at runtime.
+- Recreated the environment at C:\harness-venvs\context and linked the project
+  .venv path to it. Reinstalled editable dev dependencies and confirmed the SDK
+  imports.
+- Run 20261103-191623 completed its case-facts extraction, compression, all six
+  evals, and both control evals. The CLI then exited non-zero while printing the
+  final ">=1 required" status because the Windows cp1252 console cannot encode
+  the >= symbol. The run artifacts were preserved and pytest was rerun after
+  the run: 30 passed.
+- The evidence helper now sets UTF-8 output encoding for subprocess runs.
+- Fixed the CLI's final progress marker to use ASCII and reran the scenario as
+  run 20261103-192605. It exited 0, passed all six evals, recorded the Q6 control
+  regression, and was followed by a successful 30-test run.

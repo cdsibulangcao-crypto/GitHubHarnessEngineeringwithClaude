@@ -1,0 +1,14 @@
+Terminal excerpt from the first Context run (run_id: 20261103-191623)
+
+baseline transcript tokens: 38708
+resolved/refund: in=12344 out=379
+resolved/subscription: in=11485 out=429
+assembled tokens: 16809 (56.57% reduction)
+eval: 6/6 passed
+eval-control: Q1 passed; Q6 failed (regressed)
+
+The run produced context.md, budget.json, case_facts_call.json, eval.jsonl, and
+eval_control.jsonl. It then exited with code 1 while printing the final control
+summary: UnicodeEncodeError from the Windows cp1252 stdout codec because it
+could not encode the "at least" character (U+2265) in retail_context/run.py.
+The failed run's artifacts are preserved in run-artifacts/20261103-191623/.

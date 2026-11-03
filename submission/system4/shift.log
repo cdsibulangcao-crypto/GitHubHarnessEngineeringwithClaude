@@ -1,0 +1,10 @@
+python.exe : 2026-11-03 18:55:11,449 shift_monitor.pipeline INFO run_shift start: shift=C since=2026-04-01T00:00:00Z
+At line:2 char:752
++ ... EXITCODE }; & .venv\Scripts\python.exe -m shift_monitor run-shift --s ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-11-03 18:5...04-01T00:00:00Z:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+2026-11-03 18:55:11,489 shift_monitor.pipeline INFO run_shift done: shift=C new=17
+shift C: 17 new defects
+Shift C 2026-04-30: 3 high + 2 medium defects on capacitor-bank-C-7, all from lot 2026-0430-B (DAR 0.39, ESR ~19 mOhm); 1 low VP-4 vent squeal (repeat). Lot quarantine recommended.
